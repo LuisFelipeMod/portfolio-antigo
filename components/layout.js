@@ -18,7 +18,7 @@ export default function Layout({children, home}){
             </Head>
             <div className='container'>
                 <div className='section_info'>
-                    <Image className='meImg' src='/../public/img/me.jpeg' width='200' height='200' alt='imagem de perfil' priority></Image>
+                    <Image className='meImg' src='/img/me.jpg' width='200' height='200' alt='imagem de perfil' priority></Image>
                     <h1 className='name'>Luis Felipe<br></br>Gonçalves Modesto</h1>
                     <h2 className='occupation'>Desenvolvedor Front-End</h2>
                     <ScrollBehavior/>
