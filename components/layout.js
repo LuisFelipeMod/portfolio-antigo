@@ -4,7 +4,7 @@ import styles from './coming.module.css';
 import Link from 'next/link';
 import { motion } from "framer-motion";
 import Image from 'next/image';
-import ScrollBehavior from './scrollBehavior';
+import ScrollMenuComing from './scrollMenuComing';
 import SocialMedias from './socialMedias';
 const siteTitle = "Bem vindo!"
 
@@ -59,36 +59,9 @@ export default function Layout({children, home}){
                         Bem vindo
                     </motion.h1>
 
-                <motion.div
-                    className={styles.nav}
-                    initial = {{
-                        top: "120%",
-                        opacity: 0
-                    }}
-                    animate = {{
-                        top: "58vh",
-                        opacity: 1
-                    }}
-                    transition={{
-                        ease: "linear",
-                        duration: 0.4,
-                        opacity: { duration: 1.8 }
-                    }}
-                >
-                    <motion.a className={styles.navItem} href='curriculum'>
-                        CV
-                    </motion.a>
-
-                    <motion.a className={styles.navItem} href='curriculum'>
-                        Sobre mim
-                    </motion.a>
-
-                    <motion.a className={styles.navItem} href='curriculum'>
-                        Portfolio
-                    </motion.a>
-                </motion.div>
+                <ScrollMenuComing></ScrollMenuComing>
                 </div>
-                <section className={styles.aboutMe_section}>
+                <section className={styles.aboutMe_section} id='aboutMe'>
                     <div className={styles.aboutMe_container}>
                         <motion.div
                             className={styles.aboutMe_box}

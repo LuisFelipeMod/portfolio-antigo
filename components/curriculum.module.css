@@ -153,6 +153,12 @@
 .box_auto .info_experience{
     width: 100%;
 }
+.box_mgTop{
+    margin-top: 1rem;
+}
+.box_mgBottom{
+    margin-bottom: 1rem;
+}
 
 @media (max-width: 991px){
     .container{

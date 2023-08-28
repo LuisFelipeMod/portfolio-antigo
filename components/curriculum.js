@@ -36,27 +36,37 @@ export default function Curriculum({children, home}){
 
                     <h3 className={styles.title_experience} id='profissional'>Profissional:</h3>
                     <hr className={styles.divisor}></hr>
-                    <div className={styles.box_experience}>
-                        <span className={styles.year_experience}>2022 - atual</span>
+                    <div className={`${styles.box_experience} ${styles.box_auto} ${styles.box_mgTop}`}>
+                        <span className={styles.year_experience}>2023 - atual</span>
+                        <div className={styles.info_experience}>
+                            <Link href='https://eficazmarketing.com/' className={styles.profission_experience}>Desenvolvedor Front-End - Eficaz Marketing<span className={styles.arrow_up}>⮭</span></Link>
+                            <span className={styles.level_experience}>Júnior</span>
+                            <span className={styles.desc_experience}>
+                                Atualmente, desenvolvo projetos para plataformas e-commerce, trabalhando com APIs para desenvolver lojas virtuais. Recentemente, tenho utilizado bastante GraphQL, porém também utilizo APIs RESTful. Além disso, continuo sendo responsável pelo Adtech e dando auxílio para os estagiários.
+                            </span>    
+                        </div>
+                    </div>
+                    <div className={`${styles.box_experience} ${styles.box_auto}`}>
+                        <span className={styles.year_experience}>2022 - 2023</span>
                         <div className={styles.info_experience}>
                             <Link href='https://eficazmarketing.com/' className={styles.profission_experience}>Desenvolvedor Front-End - Eficaz Marketing<span className={styles.arrow_up}>⮭</span></Link>
                             <span className={styles.level_experience}>Trainee</span>
                             <span className={styles.desc_experience}>
-                                Atualmente, desenvolvo para plataformas e-commerce e sou responsável pelo Adtech da empresa, também tenho a honra ser o principal responsável por dar tutoria para estagiários.
+                                Atuei desenvolvendo e dando manutenções para plataformas e-commerce e sendo responsável pelo Adtech da empresa, nesse período também foi me passado a responsabilidade de dar tutoria e auxiliar estagiários.
                             </span>    
                         </div>
                     </div>
-                    <div className={styles.box_experience}>
+                    <div className={`${styles.box_experience} ${styles.box_auto}`}>
                         <span className={styles.year_experience}>jan de 2022 - nov de 2022</span>
                         <div className={styles.info_experience}>
                             <Link href='https://eficazmarketing.com/' className={styles.profission_experience}>Desenvolvedor Front-End - Eficaz Marketing<span className={styles.arrow_up}>⮭</span></Link>
                             <span className={styles.level_experience}>Estágiário</span>
                             <span className={styles.desc_experience}>
-                                Atuo desenvolvendo para plataformas e-commerces, tais como: Tray, Wake, Wordpress e Loja Integrada.<br></br>Também adquiri conhecimento em Adtech, sendo responsável pela maioria das demandas Adtech da empresa.
+                                Atuei aprendendo e desenvolvendo e dando manutenção para plataformas e-commerces, tais como: Tray, Wake, Wordpress e Loja Integrada.<br></br>Também adquiri conhecimento em Adtech, sendo responsável pela maioria das demandas Adtech da empresa.
                             </span>    
                         </div>
                     </div>
-                    <div className={`${styles.box_experience} ${styles.box_minor}`}>
+                    <div className={`${styles.box_experience} ${styles.box_auto} ${styles.box_mgBottom}`}>
                         <span className={styles.year_experience}>jan de 2022 - nov de 2022</span>
                         <div className={styles.info_experience}>
                             <Link href='https://www.paschoalotto.com.br/' className={styles.profission_experience}>Operador de teleserviços - Paschoalotto<span className={styles.arrow_up}>⮭</span></Link>
@@ -65,7 +75,7 @@ export default function Curriculum({children, home}){
                     </div>
                     <h3 className={styles.title_experience} id='education'>Formação:</h3>
                     <hr className={styles.divisor}></hr>
-                    <div className={`${styles.box_experience} ${styles.box_auto}`}>
+                    <div className={`${styles.box_experience} ${styles.box_auto} ${styles.box_mgTop}`}>
                         <span className={styles.year_experience}>2022 - 2024 (em curso)</span>
                         <div className={styles.info_experience}>
                             <Link href='https://eficazmarketing.com/' className={styles.profission_experience}>Análise e Desenvolvimento de Sistemas</Link>
