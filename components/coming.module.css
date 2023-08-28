@@ -1,0 +1,98 @@
+.comingPage{
+    position: relative;
+}
+.comingPage_section{    
+    max-width: 1366px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.comingSection{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.welcomeTitle{
+    font-size: 10rem;
+    text-transform: uppercase;
+    margin: 0 auto;
+    position: absolute;
+    z-index: -2;
+    background: linear-gradient(45deg, #2d45e0, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;  
+}
+.nav{
+    position: absolute;
+    display: flex;
+    gap: 1rem;
+    background: linear-gradient(45deg, #AEB8F4, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;  
+}
+.navItem{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+}
+.bgWave{
+    top: 0;
+    transform: rotate(180deg);
+    z-index: -4;
+}
+.aboutMe_section{
+    max-width: 100%;
+    margin: 5rem auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.aboutMe_box{
+    display: flex;
+    background: linear-gradient(90deg, #010626 33%, #2266AF 100%);
+    border-radius: 0.625rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    margin-bottom: 10rem;
+}
+.aboutMe_title{
+    font-size: 24px;
+}
+.aboutMe_myName{
+    font-size: 32px;
+}
+.aboutMe_title, .aboutMe_myName{
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #AEB8F4, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;  
+}
+.aboutMe_figure{
+    padding: 0;
+    margin: 0;
+    /* box-shadow: 0px 0px 3px 2px #2642ff; */
+}
+.aboutMe_img{
+    border-radius: 0.625rem;
+}
+.aboutMe_card{
+    padding: 1rem 3rem;
+}
+.aboutMe_paragraph{
+    margin-top: 2rem;
+    font-size: 18px;
+    line-height: 160%;
+    background: linear-gradient(45deg, #AEB8F4, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;  
+}

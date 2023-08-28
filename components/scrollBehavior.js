@@ -1,3 +1,5 @@
+import styles from './curriculum.module.css'
+
 export default function ScrollBehavior() {
     const scrollToAbout = () => {
       const about = document.querySelector("#about");
@@ -68,7 +70,7 @@ export default function ScrollBehavior() {
   
   
     return(
-     <ul className='nav_list'>
+     <ul className={styles.nav_list}>
         <li><button onClick={scrollToAbout}><span>🡲</span> Sobre</button></li>
         <li><button onClick={scrollToProfissional}><span>🡲</span> Profissional</button></li>
         <li><button onClick={scrollToEducation}><span>🡲</span> Formação</button></li>
