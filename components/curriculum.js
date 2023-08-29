@@ -27,16 +27,20 @@ export default function Curriculum({children, home}){
                         loading='lazy'
                         initial = {{
                             transform: "scale3d(0, 1, 0)",
-                            opacity: 0
+                            opacity: 0,
+                            "box-shadow": "0 0 8px 1px #2642ff",
                         }}
                         animate = {{
                             transform: "scale3d(1, 1, 1)",
-                            opacity: 1
+                            opacity: 1,
+                            "box-shadow": "0 0 8px 5px #2642ff",
                         }}
                         transition ={{
                             ease: "linear",
                             duration: 0.2,
+                            "box-shadow": { delay: 0.2 , duration: 0.9, repeat: Infinity, repeatType: "reverse" }
                         }}
+                        
                     >
                     </motion.img>
                     <motion.h1 
