@@ -24,7 +24,7 @@ export default function Curriculum({children, home}){
                         width='200'
                         height='200'
                         alt='imagem de perfil'
-                        priority
+                        loading='lazy'
                         initial = {{
                             transform: "scale3d(0, 1, 0)",
                             opacity: 0
@@ -85,7 +85,7 @@ export default function Curriculum({children, home}){
                         "overflow": "hidden",
                       }}
                       animate = {{
-                        "max-height": "168rem",
+                        "max-height": "193rem",
                         "overflow": "hidden",
                       }}
                       transition ={{
