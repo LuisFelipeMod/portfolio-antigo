@@ -14,20 +14,20 @@ export default function scrollMenuComing() {
 
     return(
         <motion.div
-        className={styles.nav}
-        initial = {{
-            top: "120%",
-            opacity: 0
-        }}
-        animate = {{
-            top: "58vh",
-            opacity: 1
-        }}
-        transition={{
-            ease: "linear",
-            duration: 0.4,
-            opacity: { duration: 1.8 }
-        }}
+            className={styles.nav}
+            initial = {{
+                top: "120%",
+                opacity: 0
+            }}
+            animate = {{
+                top: "58vh",
+                opacity: 1
+            }}
+            transition={{
+                ease: "linear",
+                duration: 0.4,
+                opacity: { duration: 1.8 }
+            }}
         >
 
         <motion.a className={styles.navItem} onClick={scrollToAboutMe}>
@@ -35,12 +35,9 @@ export default function scrollMenuComing() {
         </motion.a>
 
         <motion.a className={styles.navItem} href='curriculum'>
-            CV
+            Currículo
         </motion.a>
 
-        <motion.a className={styles.navItem} href='curriculum'>
-            Portfolio
-        </motion.a>
     </motion.div>
     )
 }

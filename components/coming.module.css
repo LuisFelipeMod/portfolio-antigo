@@ -97,3 +97,45 @@
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;  
 }
+
+@media(max-width: 991px){
+    .aboutMe_box{
+        flex-direction: column;
+    }
+    .welcomeTitle{
+        font-size: 3rem;
+    }
+    .comingPage_section{
+        max-width: 100%;
+        width: 100%;
+    }
+    .aboutMe_img{
+        width: 100%;
+        height: auto;
+    }
+    .aboutMe_myName{
+        font-size: 1rem;
+    }
+    .navItem{
+        font-size: 16px;
+    }
+    .aboutMe_img{
+        padding: 0 10%;
+    }
+    .welcomeTitle{
+        position: revert;
+        margin-top: 5rem;
+    }
+    .nav{
+        position: revert;
+    }
+    .comingSection{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    .bgWave{
+        margin-top: 5vh;
+    }
+}

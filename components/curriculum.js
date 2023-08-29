@@ -3,10 +3,10 @@ import Cursor from './cursor';
 import Link from 'next/link';
 import Image from 'next/image';
 import ScrollBehavior from './scrollBehavior';
-import SocialMedias from './socialMedias'
-import styles from './curriculum.module.css'
-import { motion } from "framer-motion"
-const siteTitle = "Meu currículo"
+import SocialMedias from './socialMedias';
+import styles from './curriculum.module.css';
+import { motion } from "framer-motion";
+const siteTitle = "Meu currículo";
 
 export default function Curriculum({children, home}){
     return(
@@ -18,13 +18,82 @@ export default function Curriculum({children, home}){
             </Head>
             <div className='container'>
                 <div className={styles.section_info}>
-                    <Image className={styles.meImg} src='/img/me.jpg' width='200' height='200' alt='imagem de perfil' priority></Image>
-                    <h1 className={styles.name}>Luis Felipe<br></br>Gonçalves Modesto</h1>
-                    <h2 className={styles.occupation}>Desenvolvedor Front-End</h2>
+                    <motion.img
+                        className={styles.meImg}
+                        src='/img/me.jpg'
+                        width='200'
+                        height='200'
+                        alt='imagem de perfil'
+                        priority
+                        initial = {{
+                            transform: "scale3d(0, 1, 0)",
+                            opacity: 0
+                        }}
+                        animate = {{
+                            transform: "scale3d(1, 1, 1)",
+                            opacity: 1
+                        }}
+                        transition ={{
+                            ease: "linear",
+                            duration: 0.2,
+                        }}
+                    >
+                    </motion.img>
+                    <motion.h1 
+                        className={styles.name}
+                        initial = {{
+                            transform: "scale3d(1, 0, 1)",
+                            opacity: 0
+                        }}
+                        animate = {{
+                            transform: "scale3d(1, 1, 1)",
+                            opacity: 1
+                        }}
+                        transition ={{
+                            ease: "linear",
+                            delay: 0.3,
+                            duration: 0.2,
+                        }}
+                    >
+                        Luis Felipe<br></br>Gonçalves Modesto
+                    </motion.h1>
+
+                    <motion.h2
+                        className={styles.occupation}
+                        initial = {{
+                            transform: "scale3d(1, 0, 1)",
+                            opacity: 0
+                        }}
+                        animate = {{
+                            transform: "scale3d(1, 1, 1)",
+                            opacity: 1
+                        }}
+                        transition ={{
+                            ease: "linear",
+                            delay: 0.6,
+                            duration: 0.2,
+                        }}
+                    >
+                        Desenvolvedor Front-End</motion.h2>
                     <ScrollBehavior/>
                     <SocialMedias/>
                 </div>
-                <div className={styles.section}>
+                <motion.div 
+                    className={styles.section}
+                    initial = {{
+                        "max-height": "0",
+                        "overflow": "hidden",
+                      }}
+                      animate = {{
+                        "max-height": "168rem",
+                        "overflow": "hidden",
+                      }}
+                      transition ={{
+                        ease: "linear",
+                        delay: 2,
+                        duration: 3,
+                      }}  
+                >
                     <div className={styles.section_about}>
                         <span className={styles.about} id='about'>
                             Minha história na programação começa em 2019, com 14 anos de idade, na Etec Antonio Devisate, quando embarquei no primeiro ano de Ensino Médio Integrado ao Técnico, 
@@ -101,7 +170,7 @@ export default function Curriculum({children, home}){
                     <hr className={styles.divisor}></hr>
                     <div className={`${styles.box_experience} ${styles.box_auto}`}>
                         <div className={styles.info_experience}>
-                            <Link href='#' className={styles.profission_experience}>JavaScript; React; NextJS; jQuery; PHP; Twig; Git; Babel;<br></br><br></br>HTML; CSS; SASS; Stylus; Figma; <br></br><br></br>Github; Google Analytics; Google Tag Manager; Google Merchant Center; Google Ads;</Link> 
+                            <Link href='#' className={styles.profission_experience}>React; NextJS; JavaScript; PHP; GraphQL; REST; jQuery; Twig; Git;<br></br><br></br>HTML; CSS; SASS; Stylus; Figma; <br></br><br></br>Github; Google Analytics; Google Tag Manager; Google Merchant Center; Google Ads;</Link> 
                         </div>
                     </div>
                     <h3 className={styles.title_experience} id='school'>Vivência Escolar:</h3>
@@ -145,7 +214,7 @@ export default function Curriculum({children, home}){
                             <Link href='#' className={styles.profission_experience}>Dra. Sra. Marina João Bernardes de Oliveira – Professora – Etec Antonio Devisate - (14)3444-5467.</Link> 
                         </div>
                     </div>
-                </div>
+                </motion.div>
             </div>
         </div>
     )

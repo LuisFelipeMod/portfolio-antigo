@@ -1,4 +1,5 @@
-import styles from './curriculum.module.css'
+import styles from './curriculum.module.css';
+import { motion } from "framer-motion";
 
 export default function ScrollBehavior() {
     const scrollToAbout = () => {
@@ -71,14 +72,148 @@ export default function ScrollBehavior() {
   
     return(
      <ul className={styles.nav_list}>
-        <li><button onClick={scrollToAbout}><span>🡲</span> Sobre</button></li>
-        <li><button onClick={scrollToProfissional}><span>🡲</span> Profissional</button></li>
-        <li><button onClick={scrollToEducation}><span>🡲</span> Formação</button></li>
-        <li><button onClick={scrollToLanguage}><span>🡲</span> Idioma</button></li>
-        <li><button onClick={scrollToKnowledge}><span>🡲</span> Conhecimentos</button></li>
-        <li><button onClick={scrollToSchoolExperience}><span>🡲</span> Vivência Escolar</button></li>
-        <li><button onClick={scrollToVolunteer}><span>🡲</span> Trabalhos Voluntários</button></li>
-        <li><button onClick={scrollToSpeeches}><span>🡲</span> Experiência Profissional</button></li>
+        <motion.li
+          initial = {{
+            transform: "scale3d(1, 0, 1)",
+            opacity: 0
+          }}
+          animate = {{
+              transform: "scale3d(1, 1, 1)",
+              opacity: 1
+          }}
+          transition ={{
+              ease: "linear",
+              delay: 0.9,
+              duration: 0.2,
+          }}  
+        >
+          <button onClick={scrollToAbout}><span>🡲</span> Sobre</button>
+        </motion.li>
+
+        <motion.li
+          initial = {{
+            transform: "scale3d(1, 0, 1)",
+            opacity: 0
+          }}
+          animate = {{
+              transform: "scale3d(1, 1, 1)",
+              opacity: 1
+          }}
+          transition ={{
+              ease: "linear",
+              delay: 1,
+              duration: 0.2,
+          }}  
+          >
+            <button onClick={scrollToProfissional}><span>🡲</span> Profissional</button>
+          </motion.li>
+
+        <motion.li
+          initial = {{
+            transform: "scale3d(1, 0, 1)",
+            opacity: 0
+          }}
+          animate = {{
+              transform: "scale3d(1, 1, 1)",
+              opacity: 1
+          }}
+          transition ={{
+              ease: "linear",
+              delay: 1.1,
+              duration: 0.2,
+          }}  
+        >
+          <button onClick={scrollToEducation}><span>🡲</span> Formação</button>
+        </motion.li>
+
+        <motion.li
+          initial = {{
+            transform: "scale3d(1, 0, 1)",
+            opacity: 0
+          }}
+          animate = {{
+              transform: "scale3d(1, 1, 1)",
+              opacity: 1
+          }}
+          transition ={{
+              ease: "linear",
+              delay: 1.2,
+              duration: 0.2,
+          }}  
+          >
+            <button onClick={scrollToLanguage}><span>🡲</span> Idioma</button>
+        </motion.li>
+        <motion.li
+          initial = {{
+            transform: "scale3d(1, 0, 1)",
+            opacity: 0
+          }}
+          animate = {{
+              transform: "scale3d(1, 1, 1)",
+              opacity: 1
+          }}
+          transition ={{
+              ease: "linear",
+              delay: 1.3,
+              duration: 0.2,
+          }}  
+        >
+          <button onClick={scrollToKnowledge}><span>🡲</span> Conhecimentos</button>
+        </motion.li>
+
+        <motion.li
+          initial = {{
+            transform: "scale3d(1, 0, 1)",
+            opacity: 0
+        }}
+        animate = {{
+            transform: "scale3d(1, 1, 1)",
+            opacity: 1
+        }}
+        transition ={{
+            ease: "linear",
+            delay: 1.4,
+            duration: 0.2,
+        }}  
+        >
+          <button onClick={scrollToSchoolExperience}><span>🡲</span> Vivência Escolar</button>
+        </motion.li>
+
+        <motion.li
+          initial = {{
+            transform: "scale3d(1, 0, 1)",
+            opacity: 0
+          }}
+          animate = {{
+              transform: "scale3d(1, 1, 1)",
+              opacity: 1
+          }}
+          transition ={{
+              ease: "linear",
+              delay: 1.5,
+              duration: 0.2,
+          }}  
+        >
+          <button onClick={scrollToVolunteer}><span>🡲</span> Trabalhos Voluntários</button>
+        </motion.li>
+
+        <motion.li
+          initial = {{
+            transform: "scale3d(1, 0, 1)",
+            opacity: 0
+          }}
+          animate = {{
+              transform: "scale3d(1, 1, 1)",
+              opacity: 1
+          }}
+          transition ={{
+            ease: "linear",
+            delay: 1.6,
+            duration: 0.2,
+          }}  
+        >
+          <button onClick={scrollToSpeeches}><span>🡲</span> Experiência Profissional</button>
+        </motion.li>
      </ul>
     )
   }

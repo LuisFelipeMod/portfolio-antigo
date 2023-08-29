@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Cursor from './cursor';
 import styles from './coming.module.css';
 import Link from 'next/link';
-import { motion } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 import Image from 'next/image';
 import ScrollMenuComing from './scrollMenuComing';
 import SocialMedias from './socialMedias';
@@ -11,8 +11,15 @@ const siteTitle = "Bem vindo!"
 
 export default function Layout({children, home}){
 
+    const { scrollYProgress } = useScroll();
+
     return(
         <div className={styles.comingPage}>
+            <motion.div
+                className="progress-bar"
+                style={{ scaleX: scrollYProgress }}
+            />
+
             <motion.svg
              className={styles.bgWave}
              initial = {{

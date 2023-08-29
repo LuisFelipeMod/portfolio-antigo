@@ -19,6 +19,9 @@
     overflow: hidden;
     font-family: Montserrat;
   }
+  body::-webkit-scrollbar{
+    display: none;
+  }
   .lines{
     position: absolute;
     top: 0;
@@ -128,4 +131,20 @@ a, button{
     background: #2696E8;
     opacity: 0.2;
     transform: translate(-30%, -30%);
+}
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: #007bff;
+  transform-origin: 0%;
+}
+
+@media(max-width: 991px){
+  .container{
+    flex-direction: column;
+    max-width: 100%;
+  }
 }

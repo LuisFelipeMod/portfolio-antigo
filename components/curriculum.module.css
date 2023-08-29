@@ -161,10 +161,6 @@
 }
 
 @media (max-width: 991px){
-    .container{
-        max-width: 100%;
-        flex-direction: column;
-    }
     .nav_list{
         display: none;
     }
