@@ -124,7 +124,7 @@
     }
     .welcomeTitle{
         position: revert;
-        margin-top: 5rem;
+        margin-top: 0;
     }
     .nav{
         position: revert;
@@ -136,6 +136,11 @@
         height: 100vh;
     }
     .bgWave{
-        margin-top: 5vh;
+        display: none;
+    }
+}
+@media(min-width: 992px){
+    .bgWaveMobile{
+        display: none;
     }
 }

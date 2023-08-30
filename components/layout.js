@@ -22,24 +22,26 @@ export default function Layout({children, home}){
 
             <motion.svg
              className={styles.bgWave}
-             initial = {{
-                position: "absolute",
-                top: "-5vh",
-                transform: "rotate(180deg) skewY(0deg)"
-             }}
-             animate = {{
-                top: "-12vh",
-                transform: "rotate(180deg) skewY(6deg)"
-             }}
-             transition = {{
-                duration: 2,
-                delay: 0.4,
-                repeat: Infinity,
-                repeatType : "reverse"
-             }}
+                initial = {{
+                   position: "absolute",
+                   top: "-5vh",
+                   transform: "rotate(180deg) skewY(0deg)"
+                }}
+                animate = {{
+                   top: "-12vh",
+                   transform: "rotate(180deg) skewY(6deg)"
+                }}
+                transition = {{
+                   duration: 2,
+                   delay: 0.4,
+                   repeat: Infinity,
+                   repeatType : "reverse"
+                }}
+
              xmlns="http://www.w3.org/2000/svg"
              viewBox="0 0 1440 320">
-             <path fill="#2d45e0" fill-opacity="1" d="M0,128L48,112C96,96,192,64,288,85.3C384,107,480,181,576,181.3C672,181,768,107,864,117.3C960,128,1056,224,1152,266.7C1248,309,1344,299,1392,293.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></motion.svg>
+             <path fill="#2d45e0" fill-opacity="1" d="M0,128L48,112C96,96,192,64,288,85.3C384,107,480,181,576,181.3C672,181,768,107,864,117.3C960,128,1056,224,1152,266.7C1248,309,1344,299,1392,293.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+             </motion.svg>            
             <Cursor/>
             <Head>
                 <title>{siteTitle}</title>
