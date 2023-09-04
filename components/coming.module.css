@@ -97,7 +97,23 @@
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;  
 }
-
+.contactMe{
+    font-size: 18px;
+    background: linear-gradient(45deg, #AEB8F4, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text; 
+    -moz-text-fill-color: transparent;  
+    display: flex;
+    align-items: center;
+    margin-top: 4rem;
+    gap: 1rem;
+}
+.contactMe a{
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
 @media(max-width: 991px){
     .aboutMe_box{
         flex-direction: column;
