@@ -75,7 +75,7 @@ export default function Layout({children, home}){
                         opacity: 0
                     }}
                     animate = {{
-                        opacity: 1
+                        opacity: 0.5
                     }}
                     transition={{
                         ease: "linear",
