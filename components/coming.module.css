@@ -114,13 +114,28 @@
     align-items: center;
     gap: 0.2rem;
 }
+.navByClick{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+    margin-top: 20rem;
+    background: linear-gradient(45deg, #AEB8F4, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;  
+}
 @media(max-width: 991px){
-
+    .navByClick{
+        margin-top: 2rem;
+    }
     .contactMe{
         display: flex;
         flex-wrap: wrap;
     }
-    
+
     .aboutMe_box{
         flex-direction: column;
     }
