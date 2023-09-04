@@ -120,7 +120,8 @@
     justify-content: center;
     align-items: center;
     opacity: 0.5;
-    margin-top: 20rem;
+    z-index: -2;
+    margin-bottom: -20rem;
     background: linear-gradient(45deg, #AEB8F4, #fff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
