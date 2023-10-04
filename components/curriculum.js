@@ -208,7 +208,7 @@ export default function Curriculum({children, home}){
                     <hr className={styles.divisor}></hr>
                     <div className={`${styles.box_experience} ${styles.box_auto}`}>
                         <div className={styles.info_experience}>
-                            <Link href='#' className={styles.profission_experience}>React; NextJS; JavaScript; PHP; GraphQL; REST; jQuery; Twig; Git;<br></br><br></br>HTML; CSS; SASS; Stylus; Figma; <br></br><br></br>Github; Google Analytics; Google Tag Manager; Google Merchant Center; Google Ads;</Link> 
+                            <Link href='#' className={styles.profission_experience}>React; NextJS; JavaScript; PHP; GraphQL; REST; jQuery; Twig; Git;<br></br><br></br>HTML; CSS; SASS; Stylus; Figma; <br></br><br></br>Github; Google Analytics; Google Tag Manager; Google Merchant Center; Google Ads; <br/><br/> Plataformas de e-commerces: WAKE; Tray; Vtex; Shopify; Wordpress; Loja Integrada </Link> 
                         </div>
                     </div>
                     <h3 className={styles.title_experience} id='school'>Vivência Escolar:</h3>
