@@ -149,7 +149,7 @@ export default function Curriculum({children, home}){
                             <Link href='https://eficazmarketing.com/' className={styles.profission_experience}>Desenvolvedor Front-End - Eficaz Marketing<span className={styles.arrow_up}>⮭</span></Link>
                             <span className={styles.level_experience}>Júnior</span>
                             <span className={styles.desc_experience}>
-                                Atualmente, desenvolvo projetos para plataformas e-commerce, trabalhando com APIs para desenvolver lojas virtuais. Recentemente, tenho utilizado bastante GraphQL, porém também utilizo APIs RESTful. Além disso, continuo sendo responsável pelo Adtech e dando auxílio para os estagiários.
+                                Atualmente, desenvolvo projetos para plataformas e-commerce, trabalhando com APIs RESTFUL e GraphQL para desenvolver e-commerces. Além disso, continuo sendo responsável pelo Adtech e dando auxílio para os estagiários.
                             </span>    
                         </div>
                     </div>
@@ -239,9 +239,9 @@ export default function Curriculum({children, home}){
                     <hr className={styles.divisor}></hr>
                     <div className={`${styles.box_experience} ${styles.box_auto}`}>
                         <div className={styles.info_experience}>
-                            <Link href='#' className={styles.profission_experience}>Eventos FLISOL 2018: “O que você precisa saber sobre Blockchain” e “Blockchain e a Indústria 4.0” – 2019 – Centro Universitário Eurípides de Marília – UNIVEM;</Link> 
-                            <Link href='#' className={styles.profission_experience}>Aprendendo na Web – curso online – Bradesco;</Link>
-                            <Link href='#/' className={styles.profission_experience}>Fundamentos do Design Gráfico – curso online – Bradesco.</Link>
+                            <Link href='#' className={styles.profission_experience}>Unimar Tech Summit: Minicurso NextJS - 2023 - Universidade de Marília - Unimar;</Link>
+                            <Link href='#' className={styles.profission_experience}>Unimar Tech Summit: “Machine Learning: Da Teoria à Prática” – 2023 – Universidade de Marília – Unimar;</Link> 
+                            <Link href='#/' className={styles.profission_experience}>Unimar Tech Summit: "Mercado de tecnologia" - 2023 - Universidade de Marília - Unimar</Link>
 
                         </div>
                     </div>
