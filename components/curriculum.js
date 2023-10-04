@@ -174,7 +174,7 @@ export default function Curriculum({children, home}){
                         </div>
                     </div>
                     <div className={`${styles.box_experience} ${styles.box_auto} ${styles.box_mgBottom}`}>
-                        <span className={styles.year_experience}>jan de 2022 - nov de 2022</span>
+                        <span className={styles.year_experience}>jun de 2021 - dezembro de 2022</span>
                         <div className={styles.info_experience}>
                             <Link href='https://www.paschoalotto.com.br/' className={styles.profission_experience}>Operador de teleserviços - Paschoalotto<span className={styles.arrow_up}>⮭</span></Link>
                             <span className={styles.level_experience}>Tempo Integral</span>  
