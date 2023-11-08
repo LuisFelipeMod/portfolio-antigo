@@ -1,2 +1,2 @@
-# Para ver este site hospedado, acesse: https://luismodesto.netlify.app/
+# https://luismodesto.netlify.app/
 
